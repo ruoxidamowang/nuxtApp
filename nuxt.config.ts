@@ -15,10 +15,9 @@ export default defineNuxtConfig({
     })
   }],
   runtimeConfig: {
-    baseURL: 'http://localhost:9999',
-    size: 10,
     public: {
-
+      baseURL: 'http://localhost:9999',
+      size: 15
     },
   },
   vite: {

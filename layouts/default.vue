@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar rounded>
       <template #title>
-        <span class="text-h6">我的博客</span>
+        <span class="text-h6 cursor-pointer" @click="navigateTo('/')">我的博客</span>
       </template>
       <template #prepend>
         <v-app-bar-nav-icon class="d-flex d-sm-none"></v-app-bar-nav-icon>

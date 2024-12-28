@@ -14,8 +14,10 @@
 
   const { command: { total } } = await blogs()
   const preRoutes = []
-  for (let i = 1; i <= Math.round(total / Number(config.size)); i++) {
+  for (let i = 1; i <= Math.round(total / config.public.size); i++) {
     preRoutes.push(`/blogs/${i}`)
+    // 预加载列表数据
+    await blogs(i, +config.public.size)
   }
   prerenderRoutes(preRoutes)
 

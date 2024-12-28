@@ -1,6 +1,4 @@
-import {useDate} from "vuetify";
-
-export const blogs = async (page=1, size = 10) => {
+export const blogs = async (page = 1, size = 15) => {
     const arr = []
 
     // for (let i = 1; i <= 111; i++) {
