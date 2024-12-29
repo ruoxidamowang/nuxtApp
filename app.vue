@@ -13,5 +13,7 @@
     </div>
 </template>
 <script setup>
-
+  useHead({
+    title: '我的博客',
+  })
 </script>

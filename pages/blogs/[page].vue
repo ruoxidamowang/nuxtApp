@@ -21,7 +21,7 @@
 
 <script setup>
 useHead({
-  title: '博客列表'
+  titleTemplate: '%s 博客列表'
 })
 const config = useRuntimeConfig()
 
